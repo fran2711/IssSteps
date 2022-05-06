@@ -8,22 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		23BF1FBD28252EFE00BE191A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FBC28252EFE00BE191A /* AppDelegate.swift */; };
-		23BF1FBF28252EFE00BE191A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FBE28252EFE00BE191A /* SceneDelegate.swift */; };
 		23BF1FC128252EFE00BE191A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FC028252EFE00BE191A /* ViewController.swift */; };
 		23BF1FC428252EFE00BE191A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BF1FC228252EFE00BE191A /* Main.storyboard */; };
 		23BF1FC628252EFF00BE191A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BF1FC528252EFF00BE191A /* Assets.xcassets */; };
 		23BF1FC928252EFF00BE191A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BF1FC728252EFF00BE191A /* LaunchScreen.storyboard */; };
+		23BF1FD32825308000BE191A /* SpaceStationPredictionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FD22825308000BE191A /* SpaceStationPredictionsResponse.swift */; };
+		23BF1FD72825309900BE191A /* NumbersFactRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FD52825309900BE191A /* NumbersFactRequest.swift */; };
+		23BF1FD82825309900BE191A /* SpaceStationPredictionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FD62825309900BE191A /* SpaceStationPredictionsRequest.swift */; };
+		23BF1FDD282530BC00BE191A /* IssManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FDA282530BC00BE191A /* IssManager.swift */; };
+		23BF1FDE282530BC00BE191A /* NumbersFactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FDB282530BC00BE191A /* NumbersFactManager.swift */; };
+		23BF1FDF282530BC00BE191A /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FDC282530BC00BE191A /* ServerManager.swift */; };
+		23BF1FE3282530E100BE191A /* NumbersFactsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FE1282530E100BE191A /* NumbersFactsProvider.swift */; };
+		23BF1FE4282530E100BE191A /* SpaceStationPredictionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FE2282530E100BE191A /* SpaceStationPredictionsProvider.swift */; };
+		23BF1FE62825311A00BE191A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FE52825311A00BE191A /* Constants.swift */; };
+		23BF1FE82825348D00BE191A /* NumbersFactResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FE72825348D00BE191A /* NumbersFactResponse.swift */; };
+		4DEB0B0B36D9FAA92028A668 /* Pods_ISSPredictions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9994C7EB1A3619E1B05CA2 /* Pods_ISSPredictions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23BF1FB928252EFE00BE191A /* ISSPredictions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSPredictions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BF1FBC28252EFE00BE191A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23BF1FBE28252EFE00BE191A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		23BF1FC028252EFE00BE191A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23BF1FC328252EFE00BE191A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23BF1FC528252EFF00BE191A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23BF1FC828252EFF00BE191A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23BF1FCA28252EFF00BE191A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23BF1FD22825308000BE191A /* SpaceStationPredictionsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceStationPredictionsResponse.swift; sourceTree = "<group>"; };
+		23BF1FD52825309900BE191A /* NumbersFactRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersFactRequest.swift; sourceTree = "<group>"; };
+		23BF1FD62825309900BE191A /* SpaceStationPredictionsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceStationPredictionsRequest.swift; sourceTree = "<group>"; };
+		23BF1FDA282530BC00BE191A /* IssManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssManager.swift; sourceTree = "<group>"; };
+		23BF1FDB282530BC00BE191A /* NumbersFactManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersFactManager.swift; sourceTree = "<group>"; };
+		23BF1FDC282530BC00BE191A /* ServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		23BF1FE1282530E100BE191A /* NumbersFactsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbersFactsProvider.swift; sourceTree = "<group>"; };
+		23BF1FE2282530E100BE191A /* SpaceStationPredictionsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceStationPredictionsProvider.swift; sourceTree = "<group>"; };
+		23BF1FE52825311A00BE191A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		23BF1FE72825348D00BE191A /* NumbersFactResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersFactResponse.swift; sourceTree = "<group>"; };
+		3DE043B452A6745E181D52DD /* Pods-ISSPredictions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPredictions.release.xcconfig"; path = "Target Support Files/Pods-ISSPredictions/Pods-ISSPredictions.release.xcconfig"; sourceTree = "<group>"; };
+		3F9994C7EB1A3619E1B05CA2 /* Pods_ISSPredictions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSPredictions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		870004A94BE313F19BC413D9 /* Pods-ISSPredictions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPredictions.debug.xcconfig"; path = "Target Support Files/Pods-ISSPredictions/Pods-ISSPredictions.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEB0B0B36D9FAA92028A668 /* Pods_ISSPredictions.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +65,8 @@
 			children = (
 				23BF1FBB28252EFE00BE191A /* ISSPredictions */,
 				23BF1FBA28252EFE00BE191A /* Products */,
+				30AE3F16460F5488460ED92A /* Pods */,
+				D694B8724098F639BA0C20A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,81 @@
 		23BF1FBB28252EFE00BE191A /* ISSPredictions */ = {
 			isa = PBXGroup;
 			children = (
+				23BF1FE0282530D700BE191A /* Providers */,
+				23BF1FD9282530AC00BE191A /* Comunications */,
+				23BF1FD02825306100BE191A /* Entities */,
 				23BF1FBC28252EFE00BE191A /* AppDelegate.swift */,
-				23BF1FBE28252EFE00BE191A /* SceneDelegate.swift */,
 				23BF1FC028252EFE00BE191A /* ViewController.swift */,
 				23BF1FC228252EFE00BE191A /* Main.storyboard */,
 				23BF1FC528252EFF00BE191A /* Assets.xcassets */,
 				23BF1FC728252EFF00BE191A /* LaunchScreen.storyboard */,
+				23BF1FE52825311A00BE191A /* Constants.swift */,
 				23BF1FCA28252EFF00BE191A /* Info.plist */,
 			);
 			path = ISSPredictions;
+			sourceTree = "<group>";
+		};
+		23BF1FD02825306100BE191A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				23BF1FD42825309000BE191A /* Request */,
+				23BF1FD12825307500BE191A /* Response */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		23BF1FD12825307500BE191A /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				23BF1FD22825308000BE191A /* SpaceStationPredictionsResponse.swift */,
+				23BF1FE72825348D00BE191A /* NumbersFactResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		23BF1FD42825309000BE191A /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				23BF1FD52825309900BE191A /* NumbersFactRequest.swift */,
+				23BF1FD62825309900BE191A /* SpaceStationPredictionsRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		23BF1FD9282530AC00BE191A /* Comunications */ = {
+			isa = PBXGroup;
+			children = (
+				23BF1FDA282530BC00BE191A /* IssManager.swift */,
+				23BF1FDB282530BC00BE191A /* NumbersFactManager.swift */,
+				23BF1FDC282530BC00BE191A /* ServerManager.swift */,
+			);
+			path = Comunications;
+			sourceTree = "<group>";
+		};
+		23BF1FE0282530D700BE191A /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				23BF1FE1282530E100BE191A /* NumbersFactsProvider.swift */,
+				23BF1FE2282530E100BE191A /* SpaceStationPredictionsProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		30AE3F16460F5488460ED92A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				870004A94BE313F19BC413D9 /* Pods-ISSPredictions.debug.xcconfig */,
+				3DE043B452A6745E181D52DD /* Pods-ISSPredictions.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D694B8724098F639BA0C20A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F9994C7EB1A3619E1B05CA2 /* Pods_ISSPredictions.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23BF1FCD28252EFF00BE191A /* Build configuration list for PBXNativeTarget "ISSPredictions" */;
 			buildPhases = (
+				08377F093D5A6C966B53E1C7 /* [CP] Check Pods Manifest.lock */,
 				23BF1FB528252EFE00BE191A /* Sources */,
 				23BF1FB628252EFE00BE191A /* Frameworks */,
 				23BF1FB728252EFE00BE191A /* Resources */,
+				41AA485045901305642BA13B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +226,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08377F093D5A6C966B53E1C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ISSPredictions-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41AA485045901305642BA13B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ISSPredictions/Pods-ISSPredictions-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ISSPredictions/Pods-ISSPredictions-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ISSPredictions/Pods-ISSPredictions-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23BF1FB528252EFE00BE191A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BF1FDE282530BC00BE191A /* NumbersFactManager.swift in Sources */,
 				23BF1FC128252EFE00BE191A /* ViewController.swift in Sources */,
+				23BF1FD32825308000BE191A /* SpaceStationPredictionsResponse.swift in Sources */,
+				23BF1FD82825309900BE191A /* SpaceStationPredictionsRequest.swift in Sources */,
+				23BF1FD72825309900BE191A /* NumbersFactRequest.swift in Sources */,
+				23BF1FE82825348D00BE191A /* NumbersFactResponse.swift in Sources */,
+				23BF1FE3282530E100BE191A /* NumbersFactsProvider.swift in Sources */,
 				23BF1FBD28252EFE00BE191A /* AppDelegate.swift in Sources */,
-				23BF1FBF28252EFE00BE191A /* SceneDelegate.swift in Sources */,
+				23BF1FE4282530E100BE191A /* SpaceStationPredictionsProvider.swift in Sources */,
+				23BF1FDF282530BC00BE191A /* ServerManager.swift in Sources */,
+				23BF1FDD282530BC00BE191A /* IssManager.swift in Sources */,
+				23BF1FE62825311A00BE191A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +426,7 @@
 		};
 		23BF1FCE28252EFF00BE191A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870004A94BE313F19BC413D9 /* Pods-ISSPredictions.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,6 +438,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +456,7 @@
 		};
 		23BF1FCF28252EFF00BE191A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE043B452A6745E181D52DD /* Pods-ISSPredictions.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,6 +468,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
