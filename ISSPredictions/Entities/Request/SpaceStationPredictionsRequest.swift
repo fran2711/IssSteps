@@ -13,10 +13,10 @@ struct SpaceStationPredictionsRequest: Codable {
     var altitude: String
     var predictions: String
     
-    init(latitude: Double, longitude: Double, altitude: Int? = nil, predictions: Int? = nil) {
+    init(latitude: Double, longitude: Double, altitude: Double? = nil) {
         self.latitude = String(latitude)
         self.longitude = String(longitude)
-        self.altitude = String(altitude ?? 500)
-        self.predictions = String(predictions ?? 10)
+        self.altitude = String(format: "%.0f", altitude ?? 500)
+        self.predictions = "10"
     }
 }

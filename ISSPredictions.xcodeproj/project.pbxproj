@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		23BF1FBD28252EFE00BE191A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FBC28252EFE00BE191A /* AppDelegate.swift */; };
-		23BF1FC128252EFE00BE191A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FC028252EFE00BE191A /* ViewController.swift */; };
 		23BF1FC428252EFE00BE191A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BF1FC228252EFE00BE191A /* Main.storyboard */; };
 		23BF1FC628252EFF00BE191A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BF1FC528252EFF00BE191A /* Assets.xcassets */; };
 		23BF1FC928252EFF00BE191A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23BF1FC728252EFF00BE191A /* LaunchScreen.storyboard */; };
@@ -22,13 +21,30 @@
 		23BF1FE4282530E100BE191A /* SpaceStationPredictionsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FE2282530E100BE191A /* SpaceStationPredictionsProvider.swift */; };
 		23BF1FE62825311A00BE191A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FE52825311A00BE191A /* Constants.swift */; };
 		23BF1FE82825348D00BE191A /* NumbersFactResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FE72825348D00BE191A /* NumbersFactResponse.swift */; };
+		23BF1FED28253CCF00BE191A /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FEB28253CCF00BE191A /* MainTableViewCell.swift */; };
+		23BF1FEE28253CCF00BE191A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23BF1FEC28253CCF00BE191A /* MainTableViewCell.xib */; };
+		23BF1FF02828F23800BE191A /* StoryboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FEF2828F23800BE191A /* StoryboardHandler.swift */; };
+		23BF1FFB2828F56C00BE191A /* IssStepsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FF72828F56C00BE191A /* IssStepsPresenter.swift */; };
+		23BF1FFC2828F56C00BE191A /* IssStepsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FF82828F56C00BE191A /* IssStepsInteractor.swift */; };
+		23BF1FFD2828F56C00BE191A /* IssStepsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FF92828F56C00BE191A /* IssStepsRouter.swift */; };
+		23BF1FFE2828F56C00BE191A /* IssStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF1FFA2828F56C00BE191A /* IssStepsViewController.swift */; };
+		23BF20012828F57600BE191A /* IssStepsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF20002828F57600BE191A /* IssStepsProtocols.swift */; };
+		23BF20042828FC7500BE191A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF20032828FC7500BE191A /* BaseViewController.swift */; };
+		23BF20082828FCF400BE191A /* BaseRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF20072828FCF400BE191A /* BaseRouterProtocol.swift */; };
+		23BF200A2828FE9900BE191A /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF20092828FE9900BE191A /* BaseViewProtocol.swift */; };
+		23BF200C2828FF4900BE191A /* BasePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF200B2828FF4900BE191A /* BasePresenterProtocol.swift */; };
+		23BF200F282917B700BE191A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF200E282917B700BE191A /* Utils.swift */; };
+		23BF20172829307300BE191A /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF20132829307300BE191A /* SplashPresenter.swift */; };
+		23BF20182829307300BE191A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF20142829307300BE191A /* SplashViewController.swift */; };
+		23BF20192829307300BE191A /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF20152829307300BE191A /* SplashInteractor.swift */; };
+		23BF201A2829307300BE191A /* SplashRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF20162829307300BE191A /* SplashRouter.swift */; };
+		23BF201D2829308300BE191A /* SplashProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF201C2829308300BE191A /* SplashProtocols.swift */; };
 		4DEB0B0B36D9FAA92028A668 /* Pods_ISSPredictions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F9994C7EB1A3619E1B05CA2 /* Pods_ISSPredictions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23BF1FB928252EFE00BE191A /* ISSPredictions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISSPredictions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BF1FBC28252EFE00BE191A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23BF1FC028252EFE00BE191A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23BF1FC328252EFE00BE191A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23BF1FC528252EFF00BE191A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23BF1FC828252EFF00BE191A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +59,24 @@
 		23BF1FE2282530E100BE191A /* SpaceStationPredictionsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceStationPredictionsProvider.swift; sourceTree = "<group>"; };
 		23BF1FE52825311A00BE191A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		23BF1FE72825348D00BE191A /* NumbersFactResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersFactResponse.swift; sourceTree = "<group>"; };
+		23BF1FEB28253CCF00BE191A /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		23BF1FEC28253CCF00BE191A /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		23BF1FEF2828F23800BE191A /* StoryboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardHandler.swift; sourceTree = "<group>"; };
+		23BF1FF72828F56C00BE191A /* IssStepsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssStepsPresenter.swift; sourceTree = "<group>"; };
+		23BF1FF82828F56C00BE191A /* IssStepsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssStepsInteractor.swift; sourceTree = "<group>"; };
+		23BF1FF92828F56C00BE191A /* IssStepsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssStepsRouter.swift; sourceTree = "<group>"; };
+		23BF1FFA2828F56C00BE191A /* IssStepsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssStepsViewController.swift; sourceTree = "<group>"; };
+		23BF20002828F57600BE191A /* IssStepsProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssStepsProtocols.swift; sourceTree = "<group>"; };
+		23BF20032828FC7500BE191A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		23BF20072828FCF400BE191A /* BaseRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRouterProtocol.swift; sourceTree = "<group>"; };
+		23BF20092828FE9900BE191A /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		23BF200B2828FF4900BE191A /* BasePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProtocol.swift; sourceTree = "<group>"; };
+		23BF200E282917B700BE191A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		23BF20132829307300BE191A /* SplashPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		23BF20142829307300BE191A /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		23BF20152829307300BE191A /* SplashInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
+		23BF20162829307300BE191A /* SplashRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashRouter.swift; sourceTree = "<group>"; };
+		23BF201C2829308300BE191A /* SplashProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashProtocols.swift; sourceTree = "<group>"; };
 		3DE043B452A6745E181D52DD /* Pods-ISSPredictions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPredictions.release.xcconfig"; path = "Target Support Files/Pods-ISSPredictions/Pods-ISSPredictions.release.xcconfig"; sourceTree = "<group>"; };
 		3F9994C7EB1A3619E1B05CA2 /* Pods_ISSPredictions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ISSPredictions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		870004A94BE313F19BC413D9 /* Pods-ISSPredictions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ISSPredictions.debug.xcconfig"; path = "Target Support Files/Pods-ISSPredictions/Pods-ISSPredictions.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,14 +115,14 @@
 		23BF1FBB28252EFE00BE191A /* ISSPredictions */ = {
 			isa = PBXGroup;
 			children = (
+				23BF1FBC28252EFE00BE191A /* AppDelegate.swift */,
+				23BF1FF12828F4EB00BE191A /* Modules */,
+				23BF1FE928253C9D00BE191A /* UI */,
 				23BF1FE0282530D700BE191A /* Providers */,
 				23BF1FD9282530AC00BE191A /* Comunications */,
 				23BF1FD02825306100BE191A /* Entities */,
-				23BF1FBC28252EFE00BE191A /* AppDelegate.swift */,
-				23BF1FC028252EFE00BE191A /* ViewController.swift */,
-				23BF1FC228252EFE00BE191A /* Main.storyboard */,
+				23BF200E282917B700BE191A /* Utils.swift */,
 				23BF1FC528252EFF00BE191A /* Assets.xcassets */,
-				23BF1FC728252EFF00BE191A /* LaunchScreen.storyboard */,
 				23BF1FE52825311A00BE191A /* Constants.swift */,
 				23BF1FCA28252EFF00BE191A /* Info.plist */,
 			);
@@ -139,6 +173,95 @@
 				23BF1FE2282530E100BE191A /* SpaceStationPredictionsProvider.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		23BF1FE928253C9D00BE191A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				23BF1FC728252EFF00BE191A /* LaunchScreen.storyboard */,
+				23BF1FC228252EFE00BE191A /* Main.storyboard */,
+				23BF1FEA28253CA700BE191A /* Cells */,
+				23BF1FEF2828F23800BE191A /* StoryboardHandler.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		23BF1FEA28253CA700BE191A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				23BF1FEB28253CCF00BE191A /* MainTableViewCell.swift */,
+				23BF1FEC28253CCF00BE191A /* MainTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		23BF1FF12828F4EB00BE191A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				23BF20022828FB2A00BE191A /* Common */,
+				23BF20102829305600BE191A /* Splash */,
+				23BF1FF42828F50F00BE191A /* IssSteps */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		23BF1FF42828F50F00BE191A /* IssSteps */ = {
+			isa = PBXGroup;
+			children = (
+				23BF1FFF2828F56F00BE191A /* Protocols */,
+				23BF1FF82828F56C00BE191A /* IssStepsInteractor.swift */,
+				23BF1FF72828F56C00BE191A /* IssStepsPresenter.swift */,
+				23BF1FF92828F56C00BE191A /* IssStepsRouter.swift */,
+				23BF1FFA2828F56C00BE191A /* IssStepsViewController.swift */,
+			);
+			path = IssSteps;
+			sourceTree = "<group>";
+		};
+		23BF1FFF2828F56F00BE191A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				23BF20002828F57600BE191A /* IssStepsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		23BF20022828FB2A00BE191A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				23BF20032828FC7500BE191A /* BaseViewController.swift */,
+				23BF200D28290EEC00BE191A /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		23BF200D28290EEC00BE191A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				23BF20072828FCF400BE191A /* BaseRouterProtocol.swift */,
+				23BF20092828FE9900BE191A /* BaseViewProtocol.swift */,
+				23BF200B2828FF4900BE191A /* BasePresenterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		23BF20102829305600BE191A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				23BF201B2829307C00BE191A /* Protocols */,
+				23BF20152829307300BE191A /* SplashInteractor.swift */,
+				23BF20132829307300BE191A /* SplashPresenter.swift */,
+				23BF20162829307300BE191A /* SplashRouter.swift */,
+				23BF20142829307300BE191A /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		23BF201B2829307C00BE191A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				23BF201C2829308300BE191A /* SplashProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		30AE3F16460F5488460ED92A /* Pods */ = {
@@ -220,6 +343,7 @@
 			files = (
 				23BF1FC928252EFF00BE191A /* LaunchScreen.storyboard in Resources */,
 				23BF1FC628252EFF00BE191A /* Assets.xcassets in Resources */,
+				23BF1FEE28253CCF00BE191A /* MainTableViewCell.xib in Resources */,
 				23BF1FC428252EFE00BE191A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,17 +397,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23BF1FED28253CCF00BE191A /* MainTableViewCell.swift in Sources */,
+				23BF1FFD2828F56C00BE191A /* IssStepsRouter.swift in Sources */,
 				23BF1FDE282530BC00BE191A /* NumbersFactManager.swift in Sources */,
-				23BF1FC128252EFE00BE191A /* ViewController.swift in Sources */,
+				23BF20012828F57600BE191A /* IssStepsProtocols.swift in Sources */,
+				23BF201D2829308300BE191A /* SplashProtocols.swift in Sources */,
+				23BF20042828FC7500BE191A /* BaseViewController.swift in Sources */,
+				23BF20192829307300BE191A /* SplashInteractor.swift in Sources */,
+				23BF1FF02828F23800BE191A /* StoryboardHandler.swift in Sources */,
 				23BF1FD32825308000BE191A /* SpaceStationPredictionsResponse.swift in Sources */,
+				23BF1FFB2828F56C00BE191A /* IssStepsPresenter.swift in Sources */,
 				23BF1FD82825309900BE191A /* SpaceStationPredictionsRequest.swift in Sources */,
+				23BF20182829307300BE191A /* SplashViewController.swift in Sources */,
 				23BF1FD72825309900BE191A /* NumbersFactRequest.swift in Sources */,
 				23BF1FE82825348D00BE191A /* NumbersFactResponse.swift in Sources */,
+				23BF20172829307300BE191A /* SplashPresenter.swift in Sources */,
 				23BF1FE3282530E100BE191A /* NumbersFactsProvider.swift in Sources */,
+				23BF200A2828FE9900BE191A /* BaseViewProtocol.swift in Sources */,
 				23BF1FBD28252EFE00BE191A /* AppDelegate.swift in Sources */,
 				23BF1FE4282530E100BE191A /* SpaceStationPredictionsProvider.swift in Sources */,
+				23BF200F282917B700BE191A /* Utils.swift in Sources */,
+				23BF1FFC2828F56C00BE191A /* IssStepsInteractor.swift in Sources */,
+				23BF200C2828FF4900BE191A /* BasePresenterProtocol.swift in Sources */,
+				23BF20082828FCF400BE191A /* BaseRouterProtocol.swift in Sources */,
 				23BF1FDF282530BC00BE191A /* ServerManager.swift in Sources */,
 				23BF1FDD282530BC00BE191A /* IssManager.swift in Sources */,
+				23BF1FFE2828F56C00BE191A /* IssStepsViewController.swift in Sources */,
+				23BF201A2829307300BE191A /* SplashRouter.swift in Sources */,
 				23BF1FE62825311A00BE191A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +575,7 @@
 				DEVELOPMENT_TEAM = ZJB52HYPRJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ISSPredictions/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Usaremos tu localización para personalizar tu experiencia en la app";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -446,11 +587,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.franlucena.ISSPredictions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.franlucena.ISS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,6 +606,7 @@
 				DEVELOPMENT_TEAM = ZJB52HYPRJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ISSPredictions/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Usaremos tu localización para personalizar tu experiencia en la app";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -476,11 +618,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.franlucena.ISSPredictions;
+				PRODUCT_BUNDLE_IDENTIFIER = com.franlucena.ISS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
