@@ -34,6 +34,7 @@ protocol StepDetailPresenterProtocol: BasePresenterProtocol {
     var router: StepDetailRouterProtocol? { get set }
     
     func hideLoading()
+    func showError(_ error: String)
 }
 
 //----------------------------

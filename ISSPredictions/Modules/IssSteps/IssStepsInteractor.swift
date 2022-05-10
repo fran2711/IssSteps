@@ -16,7 +16,8 @@ class IssStepsInteractor : IssStepsInteractorProtocol {
             guard let steps = response.response else { return }
             onSuccess(steps)
         } onError: { [weak self] error in
-            
+            self?.presenter?.hideLoading()
+            self?.presenter?.showError(error.localizedDescription)
         }
 
     }

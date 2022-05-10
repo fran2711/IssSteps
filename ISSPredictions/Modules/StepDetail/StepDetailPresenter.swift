@@ -28,7 +28,6 @@ class StepDetailPresenter: BasePresenterProtocol {
     }
     
     func getFact() {
-//        self.showLoading()
         let request = NumbersFactRequest(number: issStep.duration ?? 0)
         view?.showLoading()
         interactor?.getFacts(request: request, onSuccess: { [weak self] fact in
@@ -42,6 +41,20 @@ extension StepDetailPresenter: StepDetailPresenterProtocol {
     
     func hideLoading() {
         view?.hideLoading()
+    }
+    
+    func showError(_ error: String) {
+        if let alert = view?.errorAlert(errorMessage: error, title: "Error") {
+            let accept = UIAlertAction(title: "Acceptar", style: .default)
+            let retry = UIAlertAction(title: "Reintentar", style: .default) { [weak self] _ in
+                self?.getFact()
+            }
+            
+            alert.addAction(accept)
+            alert.addAction(retry)
+            
+            view?.showAlert(alert)
+        }
     }
 }
 

@@ -49,8 +49,7 @@ class IssStepsPresenter: BasePresenterProtocol {
         geoCoder.reverseGeocodeLocation(location) { [weak self] placemarks, error in
             if error != nil {
                 self?.view?.hideLoading()
-                print(error?.localizedDescription)
-                self?.view?.errorAlert(errorMessage: error?.localizedDescription ?? "", title: "Error")
+                
             }
             
             guard let marks = placemarks else { return }
@@ -89,6 +88,24 @@ class IssStepsPresenter: BasePresenterProtocol {
 extension IssStepsPresenter: IssStepsPresenterProtocol {
     func selectedStep(_ step: IssStep) {
         router?.showStepDetail(step: step, address: self.address)
+    }
+    
+    func hideLoading() {
+        view?.hideLoading()
+    }
+    
+    func showError(_ error: String) {
+        if let alert = view?.errorAlert(errorMessage: error, title: "Error") {
+            let accept = UIAlertAction(title: "Acceptar", style: .default)
+            let retry = UIAlertAction(title: "Reintentar", style: .default) { [weak self] _ in
+                self?.getSteps()
+            }
+            
+            alert.addAction(accept)
+            alert.addAction(retry)
+            
+            view?.showAlert(alert)
+        }
     }
 }
 

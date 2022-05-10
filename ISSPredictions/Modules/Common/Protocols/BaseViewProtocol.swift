@@ -11,6 +11,7 @@ import UIKit
 protocol BaseViewProtocol {
     func showLoading()
     func hideLoading()
+    func showAlert(_ alert: UIAlertController)
     func errorAlert(errorMessage: String, title: String?) -> UIAlertController
 }
 
@@ -34,5 +35,9 @@ extension UIViewController: BaseViewProtocol {
     
     func errorAlert(errorMessage: String, title: String?) -> UIAlertController {
         return AlertManager.createErrorAlert(title: title, message: errorMessage)
+    }
+    
+    func showAlert(_ alert: UIAlertController) {
+        self.present(alert, animated: true, completion: nil)
     }
 }

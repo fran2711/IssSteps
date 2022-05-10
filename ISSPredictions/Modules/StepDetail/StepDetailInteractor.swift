@@ -12,10 +12,11 @@ class StepDetailInteractor : StepDetailInteractorProtocol {
     var presenter: StepDetailPresenterProtocol?
     
     func getFacts(request: NumbersFactRequest, onSuccess: @escaping(String?) -> ()) {
-        NumbersFactsProvider().getNumberFact(request: request) { [weak self] response in
+        NumbersFactsProvider().getNumberFact(request: request) { response in
             onSuccess(response?.text)
         } onError: { [weak self] error in
             self?.presenter?.hideLoading()
+            self?.presenter?.showError(error.localizedDescription)
         }
 
     }

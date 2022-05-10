@@ -35,6 +35,8 @@ protocol IssStepsPresenterProtocol: BasePresenterProtocol {
     var router: IssStepsRouterProtocol? { get set }
     
     func selectedStep(_ step: IssStep)
+    func showError(_ error: String)
+    func hideLoading()
 }
 
 //----------------------------

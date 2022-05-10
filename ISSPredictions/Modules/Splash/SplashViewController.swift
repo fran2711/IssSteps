@@ -64,8 +64,9 @@ extension SplashViewController: CLLocationManagerDelegate {
                     UIApplication.shared.open(settingsUrl, completionHandler: { (success) in })
                 }
             }
+            
             let cancelAction = UIAlertAction(title: "Cancel", style: .default) { _ in
-                
+                self.presenter.goToIssSteps(latitude: nil, longitude: nil, altitude: 500)
             }
             
             alertController.addAction(cancelAction)
