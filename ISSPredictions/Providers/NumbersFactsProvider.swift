@@ -10,9 +10,9 @@ import Foundation
 class NumbersFactsProvider {
     let manager: NumbersFactManager = ServerManager.shared
     
-    func getNumberFact(number: String,
+    func getNumberFact(request: NumbersFactRequest,
                        onSuccess: @escaping(NumbersFactResponse?) -> (),
                        onError: @escaping(Error) -> ()) {
-        manager.getNumberFact(number: number, onSuccess: onSuccess, onError: onError)
+        manager.getNumberFact(request: request, onSuccess: onSuccess, onError: onError)
     }
 }

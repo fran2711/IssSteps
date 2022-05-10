@@ -21,8 +21,8 @@ class MainTableViewCell: UITableViewCell {
 //        super.setSelected(selected, animated: animated)
     }
     
-    func configure(step: IssSteps) {
-        stepDurationLabel.text = step.duration?.converToDurationTime()
+    func configure(step: IssStep) {
+        stepDurationLabel.text = step.duration?.converToDurationTime(initialText: "Durante")
         stepTimeLabel.text = step.risetime?.getWeekdayAndHourFromRiseTime()
     }
     

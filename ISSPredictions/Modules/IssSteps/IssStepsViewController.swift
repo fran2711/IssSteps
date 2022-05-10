@@ -15,14 +15,20 @@ class IssStepsViewController: BaseViewController {
     var presenter: IssStepsPresenterProtocol!
     
     @IBOutlet weak var stepsTableView: UITableView!
+    @IBOutlet weak var currentLocationLabel: UILabel!
     
-    var issSteps: [IssSteps] = []
+    var issSteps: [IssStep] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
-        title = "Próximos Sobrevuelos"
+        title = Constants.stepsTitle
         stepsTableView.register(UINib(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: MainTableViewCell.identifier)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter.viewDidAppear()
     }
     
     
@@ -46,6 +52,11 @@ extension IssStepsViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(issSteps[indexPath.row])
+        presenter.selectedStep(issSteps[indexPath.row])
+    }
+    
     
 }
 
@@ -55,10 +66,13 @@ extension IssStepsViewController: UITableViewDelegate, UITableViewDataSource {
 // MARK: - Protocol
 //----------------------------
 extension IssStepsViewController: IssStepsViewProtocol{
-    
-    func showSteps(steps: [IssSteps]) {
+
+    func showSteps(steps: [IssStep]) {
         self.issSteps = steps
         stepsTableView.reloadData()
     }
-
+    
+    func updateLocation(_ location: String) {
+        self.currentLocationLabel.text = location
+    }
 }

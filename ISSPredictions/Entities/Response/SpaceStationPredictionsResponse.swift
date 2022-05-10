@@ -8,10 +8,10 @@
 import Foundation
 
 struct SpaceStationPredictionsResponse: Codable {
-    var response: [IssSteps]?
+    var response: [IssStep]?
 }
 
-struct IssSteps: Codable {
+struct IssStep: Codable {
     var duration: Int?
     var risetime: Int?
 }

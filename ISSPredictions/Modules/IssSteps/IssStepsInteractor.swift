@@ -11,7 +11,7 @@ import Foundation
 class IssStepsInteractor : IssStepsInteractorProtocol {
     var presenter: IssStepsPresenterProtocol?
     
-    func getIssSteps(request: SpaceStationPredictionsRequest, onSuccess: @escaping([IssSteps]) -> ()) {
+    func getIssSteps(request: SpaceStationPredictionsRequest, onSuccess: @escaping([IssStep]) -> ()) {
         SpaceStationPredictionsProvider().getSpaceStationPredictions(request: request) { response in
             guard let steps = response.response else { return }
             onSuccess(steps)

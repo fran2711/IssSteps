@@ -6,12 +6,13 @@
 //
 
 import Foundation
+import UIKit
 
 extension Int {
-    func converToDurationTime() -> String {
+    func converToDurationTime(initialText: String) -> String {
         let (m, s) = ((self % 3600) / 60, (self % 3600) % 60)
         
-        return "Durante \(m) minutos y \(s) segundos"
+        return "\(initialText) \(m) minutos y \(s) segundos"
     }
     
     func getWeekdayAndHourFromRiseTime() -> String {
@@ -23,7 +24,7 @@ extension Int {
         let weekday = formatter.weekdaySymbols[Calendar.current.component(.weekday, from: myDate) - 1].capitalizingFirstLetter()
         formatter.dateFormat = ("dd' de 'MMMM' a las 'hh':'mm'")
         let dayAndHour = formatter.string(from: myDate)
-                
+        
         return "\(weekday) \(dayAndHour)"
     }
 }

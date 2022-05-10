@@ -18,6 +18,9 @@ class SplashPresenter: BasePresenterProtocol {
 }
 
 extension SplashPresenter: SplashPresenterProtocol {
+
+    func showLoading() {
+    }
     
     func goToIssSteps(latitude: Double?, longitude: Double?, altitude: Double) {
         var lat: Double = 40.3297
@@ -29,7 +32,6 @@ extension SplashPresenter: SplashPresenterProtocol {
         if let longitude = longitude {
             long = longitude
         }
-        
         let request = SpaceStationPredictionsRequest(latitude: lat, longitude: long, altitude: altitude)
         router?.presentIssSteps(request: request)
     }

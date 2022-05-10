@@ -16,9 +16,11 @@ class SplashViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         presenter.viewDidLoad()
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         getUserLocation()
     }
     
@@ -27,6 +29,7 @@ class SplashViewController: BaseViewController {
         locationManager.requestWhenInUseAuthorization()
         
         if CLLocationManager.locationServicesEnabled() {
+            self.showLoading()
             locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
             locationManager.requestLocation()
@@ -75,6 +78,6 @@ extension SplashViewController: CLLocationManagerDelegate {
 //----------------------------
 // MARK: - Protocol
 //----------------------------
-extension SplashViewController: SplashViewProtocol{
-    
+extension SplashViewController: SplashViewProtocol {
+   
 }

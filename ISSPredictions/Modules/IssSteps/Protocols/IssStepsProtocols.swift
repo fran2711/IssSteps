@@ -13,7 +13,8 @@ import UIKit
 // MARK: - View
 //----------------------------
 protocol IssStepsViewProtocol: BaseViewProtocol {
-    func showSteps(steps: [IssSteps])
+    func showSteps(steps: [IssStep])
+    func updateLocation(_ location: String)
 }
 
 //----------------------------
@@ -22,7 +23,7 @@ protocol IssStepsViewProtocol: BaseViewProtocol {
 protocol IssStepsInteractorProtocol {
     var presenter: IssStepsPresenterProtocol? { get set }
     
-    func getIssSteps(request: SpaceStationPredictionsRequest, onSuccess: @escaping([IssSteps]) -> ())
+    func getIssSteps(request: SpaceStationPredictionsRequest, onSuccess: @escaping([IssStep]) -> ())
 }
 
 //----------------------------
@@ -32,6 +33,8 @@ protocol IssStepsPresenterProtocol: BasePresenterProtocol {
     var view: IssStepsViewProtocol? { get set }
     var interactor: IssStepsInteractorProtocol? { get set }
     var router: IssStepsRouterProtocol? { get set }
+    
+    func selectedStep(_ step: IssStep)
 }
 
 //----------------------------
@@ -41,4 +44,5 @@ protocol IssStepsRouterProtocol : BaseRouterProtocol {
     var view: IssStepsViewController? { get set }
     static func launchModule(request: SpaceStationPredictionsRequest) -> UIViewController?
     
+    func showStepDetail(step: IssStep, address: String?)
 }

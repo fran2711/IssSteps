@@ -13,12 +13,13 @@ enum StoryboardName: String {
 }
 
 enum ViewControllerId: String {
-    case issSteps = "IssStepsViewController"
-    case splash = "SplashViewController"
+    case issSteps = "IssStepsView"
+    case splash = "SplashView"
+    case stepDetail = "StepDetailView"
     
     var storyboard: StoryboardName {
         switch self {
-        case .splash, .issSteps:
+        case .splash, .issSteps, .stepDetail:
             return .main
         }
     }

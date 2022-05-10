@@ -8,7 +8,7 @@
 import Foundation
 
 struct NumbersFactRequest {
-    var number: String?
+    var number: String
     
     init(number: Int) {
         self.number = String(number)

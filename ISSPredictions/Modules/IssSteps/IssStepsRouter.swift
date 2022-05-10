@@ -42,4 +42,8 @@ class IssStepsRouter: BaseRouter, IssStepsRouterProtocol {
     //----------------------------
     // MARK: - Navigation methods
     //----------------------------
+    
+    func showStepDetail(step: IssStep, address: String?) {
+        push(from: view, to: StepDetailRouter.launchModule(issStep: step, address: address))
+    }
 }

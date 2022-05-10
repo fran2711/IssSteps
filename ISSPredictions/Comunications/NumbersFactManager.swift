@@ -7,17 +7,17 @@
 
 import Foundation
 protocol NumbersFactManager {
-    func getNumberFact(number: String,
+    func getNumberFact(request: NumbersFactRequest,
                        onSuccess: @escaping(NumbersFactResponse?) -> (),
                        onError: @escaping(Error) -> ())
 }
 
 extension ServerManager: NumbersFactManager {
     
-    func getNumberFact(number: String,
+    func getNumberFact(request: NumbersFactRequest,
                        onSuccess: @escaping(NumbersFactResponse?) -> (),
                        onError: @escaping(Error) -> ()) {
-        let completeRequest = Constants.numbersURL + number + "?json"
+        let completeRequest = Constants.numbersURL + request.number + "?json"
         
         publicRequest(completeRequest, method: .get) { response in
             do {
