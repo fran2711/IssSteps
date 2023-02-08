@@ -31,7 +31,7 @@ protocol SplashPresenterProtocol: BasePresenterProtocol {
     var router: SplashRouterProtocol? { get set }
     
     func showLoading()
-    func goToIssSteps(latitude: Double?, longitude: Double?, altitude: Double)
+    func goToIssSteps(latitude: Double?, longitude: Double?, altitude: Double?)
 }
 
 //----------------------------
